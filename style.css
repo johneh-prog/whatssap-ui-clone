@@ -1,0 +1,145 @@
+body{
+  margin:0px;
+  color: white;
+  height:100%;
+  width:100%;
+  background-image: url("background.jpg");
+  background-size:300px;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+#header{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-between;
+  gap:5px;
+  background: hsla(204, 52%, 5%, 1);
+  padding:10px;
+  border-bottom:1px solid hsla(204, 15%, 15%, 1);
+}
+#user-info{
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+  justify-content: center;
+  gap:3px;
+  margin-right:40px;
+}
+#header h2, #header p{
+  margin:0;
+}
+#secure{
+  font-size:1rem;
+  color:#787878;
+  text-align: center;
+  margin-bottom:20px;
+}
+#content{
+  border:none;
+  min-height:80vh;
+  width:100%;
+}
+#footer{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:left;
+  gap:20px;
+  padding:0px;
+  position: fixed;
+  width:100%;
+  bottom:0px;
+  background: hsla(235, 0%, 5%, 1);
+  border: none;
+  
+}
+#message{
+  height: auto;
+  min-height:24px;
+  line-height:24px;
+  box-sizing: border-box;
+  width:80%;
+  resize:none;
+  border-radius:20px;
+  outline:none;
+  border:1px solid hsla(198, 0%, 67%, 1);
+  padding:8px 15px;
+  color: #E2E2E2;
+  font-size:1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: hsla(198, 0%, 8%, 1);
+}
+#sendBtn{
+  width:15%;
+  font-size:2.3rem;
+  border:1px solid #232323;
+  background: royalblue;
+  color: white;
+  border-radius:50%;
+  padding:0px 10px;
+}
+.textContainer{
+  padding:10px 8px 18px 8px;
+  border-radius:10px;
+  border:none;
+  background-color:black;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-self: left;
+  margin:10px;
+  width:fit-content;
+  word-break: break-all;
+  max-width:70%;
+  margin-left: auto;
+  position:relative;
+  min-width:50px;
+  font-size:1.05rem;
+}
+#chatBox{
+  height:80vh;
+  overflow-y: auto;
+  padding-bottom:60px;
+}
+#back{
+  color: white;
+  font-size:2rem;
+  font-weight:bold;
+  background:none;
+  border-radius:50%;
+  border:none;
+  transition: background 0.3s ease;
+}
+#about{
+  font-size:0.9rem;
+  color:#777777;
+}
+#back:active{
+  background: #333333;
+}
+#profile{
+  font-size:2rem;
+  border-radius:50%;
+  margin-left:10px;
+}
+#settings{
+  background:none;
+  font-size:1.8rem;
+  color:#858585;
+  border-radius:50%;
+  padding:0px 6px;
+  cursor:pointer;
+}
+#textContainer:hover{
+  background: hsla(235, 44%, 60%, 1);
+}
+.msg-time{
+  position:absolute;
+  bottom:2px;
+  right:8px;
+  font-size:10px;
+  color: #ffffff99;
+}
